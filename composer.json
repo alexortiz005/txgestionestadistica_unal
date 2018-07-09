@@ -1,0 +1,19 @@
+{
+    "name": "unal/gestionestadistica-unal",
+    "type": "typo3-cms-extension",
+    "description": "Extension que permite la adminsitraci\u00f3n y publicaci\u00f3n de temas de gesti\u00f3n estad\u00edstica para la universidad nacional de colombia",
+    "authors": [
+        {
+            "name": "Alex Ortiz",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "UNAL\\GestionestadisticaUnal\\": "Classes"
+        }
+    }
+}

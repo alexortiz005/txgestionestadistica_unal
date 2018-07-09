@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-07-10T01:51:34Z" product-name="gestionestadistica_unal">
+		<header/>
+		<body>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_tema">
+				<source>Tema</source>
+			</trans-unit>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_tema.nombre">
+				<source>Nombre</source>
+			</trans-unit>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_tema.nombre_display">
+				<source>Nombre Display</source>
+			</trans-unit>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_tema.descripcion">
+				<source>Descripcion</source>
+			</trans-unit>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_tema.contenido">
+				<source>Contenido</source>
+			</trans-unit>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_tema.recursos">
+				<source>Recursos</source>
+			</trans-unit>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_recurso">
+				<source>Recurso</source>
+			</trans-unit>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_recurso.nombre">
+				<source>Nombre</source>
+			</trans-unit>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_recurso.nombre_display">
+				<source>Nombre Display</source>
+			</trans-unit>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_recurso.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_gestionestadisticaunal_domain_model_recurso.archivo">
+				<source>Archivo</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
