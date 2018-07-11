@@ -4,12 +4,13 @@ defined('TYPO3_MODE') || die('Access denied.');
 call_user_func(
     function()
     {
+        $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['default'] = 'EXT:gestionestadistica_unal/Configuration/RTE/Default.yaml';
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
             'UNAL.GestionestadisticaUnal',
             'Previewgestion',
             [
-                'Tema' => 'list, show'
+                'Tema' => 'preview,list, show'
             ],
             // non-cacheable actions
             [

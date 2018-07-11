@@ -46,4 +46,28 @@ class TemaController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     {
         $this->view->assign('tema', $tema);
     }
+    /**
+     * action preview
+     *
+     * @param \UNAL\GestionestadisticaUnal\Domain\Model\Tema $tema
+     * @return void
+     */
+    public function previewAction()
+    {
+        $uri_link = $this->settings['link'];
+        $titulo_link = $this->settings['titulo_link'];
+        $uids_temas_a_mostrar = explode(',', $this->settings['temas_a_mostrar']);
+
+        $temas_a_mostrar = [];
+        foreach ($uids_temas_a_mostrar as $uid) {
+            $temas_a_mostrar[] = $this->temaRepository->findByUid($uid);
+        }  
+
+        $this->view->assignMultiple([
+            'uri_link' => $uri_link, 
+            'titulo_link' => $titulo_link, 
+            'temas' => $temas_a_mostrar
+        ]);
+
+    }
 }

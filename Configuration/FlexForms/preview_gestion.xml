@@ -1,0 +1,56 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>General</sheetTitle>
+                    <sheetDescription>General Description</sheetDescription>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.temas_a_mostrar>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:gestionestadistica_unal/Resources/Private/Language/locallang.xlf:plugin_previewgestion.temas</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>tx_gestionestadisticaunal_domain_model_tema</allowed>
+                                <size>3</size>
+                                <maxitems>3</maxitems>
+                                <minitems>3</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.temas_a_mostrar>                  
+
+                    <settings.titulo_link>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:gestionestadistica_unal/Resources/Private/Language/locallang.xlf:plugin_previewgestion.titulo_link</label>
+                            <config>
+                                <type>input</type>
+                             </config>
+                        </TCEforms>
+                    </settings.titulo_link>
+
+                    <settings.link>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:gestionestadistica_unal/Resources/Private/Language/locallang.xlf:plugin_previewgestion.link</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputLink</renderType>
+                             </config>
+                        </TCEforms>
+                    </settings.link>    
+
+
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

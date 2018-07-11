@@ -32,7 +32,9 @@ Otherwise your changes will be overwritten the next time you save the extension 
 			<td><f:link.action action="show" arguments="{tema : tema}"> {tema.nombre}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{tema : tema}"> {tema.nombreDisplay}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{tema : tema}"> {tema.descripcion}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{tema : tema}"> {tema.contenido}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tema : tema}"> 
+				<f:format.html>{tema.contenido}</f:format.html>			
+			</f:link.action></td>
 			<td><f:link.action action="edit" arguments="{tema : tema}">Edit</f:link.action></td>
 			<td><f:link.action action="delete" arguments="{tema : tema}">Delete</f:link.action></td>
 		</tr>

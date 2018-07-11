@@ -36,6 +36,15 @@
 			<trans-unit id="tx_gestionestadisticaunal_domain_model_recurso.archivo">
 				<source>Archivo</source>
 			</trans-unit>
+			<trans-unit id="plugin_previewgestion.temas">
+				<source>Temas a mostrar</source>
+			</trans-unit>
+			<trans-unit id="plugin_previewgestion.titulo_link">
+				<source>Titulo del Enlace</source>
+			</trans-unit>
+			<trans-unit id="plugin_previewgestion.link">
+				<source>Enlace</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -154,6 +154,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_gestionestadisticaunal_domain_model_recurso',
+                'foreign_table_where' => 'AND tx_gestionestadisticaunal_domain_model_recurso.pid=###CURRENT_PID###',
                 'MM' => 'tx_gestionestadisticaunal_tema_recurso_mm',
                 'size' => 10,
                 'autoSizeMax' => 30,

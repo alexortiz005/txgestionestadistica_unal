@@ -24,7 +24,9 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '1.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '8.6.0-8.7.99',
+            'typo3' => '8.6.0-8.7.99',            
+            'rte_ckeditor_image' => '8.7.0-8.7.99',            
+            'rte_ckeditor' => '8.7.0-8.7.99',            
         ],
         'conflicts' => [],
         'suggests' => [],
