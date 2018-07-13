@@ -7,17 +7,24 @@
 		<div class="row">
 			<f:for each="{temas}" as="tema">
 				<div class="col-md-3">
-					<f:link.page pageUid="{uri_link}" target="_blank"> 
-						<h3>{tema.nombreDisplay}</h3>
-					</f:link.page>
+					<div class="border-preview-tema">						
+											
+						<f:link.action class="preview-tema" pageUid="{uri_link}" pluginName="Temasgestion" target="_blank" action="show" arguments="{tema : tema}"> 
+							<h3>{tema.nombreDisplay}</h3>
+						</f:link.action>
+					
+					</div>
 							
 				</div>			
 			</f:for>
 				<div class="col-md-3">
-					<f:link.page pageUid="{uri_link}" target="_blank">
-						<h3>{titulo_link}</h3>		
-					</f:link.page>
-					
+					<div class="border-preview-tema">						
+									
+						<f:link.action class="preview-tema" pageUid="{uri_link}" pluginName="Temasgestion" target="_blank" action="list" >
+							<h3>{titulo_link}</h3>		
+						</f:link.action>
+							
+					</div>
 				</div>	
 		</div>
 	</div>	

@@ -33,10 +33,6 @@ plugin.tx_gestionestadisticaunal_temasgestion {
         layoutRootPaths.0 = EXT:gestionestadistica_unal/Resources/Private/Layouts/
         layoutRootPaths.1 = {$plugin.tx_gestionestadisticaunal_temasgestion.view.layoutRootPath}
     }
-    persistence {
-        storagePid = {$plugin.tx_gestionestadisticaunal_temasgestion.persistence.storagePid}
-        #recursive = 1
-    }
     features {
         #skipDefaultArguments = 1
         # if set to 1, the enable fields are ignored in BE context
@@ -49,36 +45,8 @@ plugin.tx_gestionestadisticaunal_temasgestion {
     }
 }
 
-# these classes are only used in auto-generated templates
-plugin.tx_gestionestadisticaunal._CSS_DEFAULT_STYLE (
-    textarea.f3-form-error {
-        background-color:#FF9F9F;
-        border: 1px #FF0000 solid;
-    }
-
-    input.f3-form-error {
-        background-color:#FF9F9F;
-        border: 1px #FF0000 solid;
-    }
-
-    .tx-gestionestadistica-unal table {
-        border-collapse:separate;
-        border-spacing:10px;
-    }
-
-    .tx-gestionestadistica-unal table th {
-        font-weight:bold;
-    }
-
-    .tx-gestionestadistica-unal table td {
-        vertical-align:top;
-    }
-
-    .typo3-messages .message-error {
-        color:red;
-    }
-
-    .typo3-messages .message-ok {
-        color:green;
-    }
-)
+page{
+    includeCSS {
+        gestion-estadistica = EXT:gestionestadistica_unal/Resources/Public/Css/gestion-estadistica.scss
+    }  
+}
