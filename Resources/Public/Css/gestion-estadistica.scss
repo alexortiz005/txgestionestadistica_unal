@@ -2,6 +2,31 @@
 	.preview-temas-gestion{
 		padding:5%;
 		font-size: 12px;
+		@media (max-width: 2560px) {
+			font-size: 22px;		 
+		}
+
+		@media (max-width: 1440px) {
+			font-size: 11px;		 
+		}
+
+		@media (max-width: 768px) {
+			font-size: 18px;		 
+		}
+
+		@media (max-width: 425px) {
+			font-size: 22px;		 
+		}
+
+		@media (max-width: 375px) {
+			font-size: 19px;		 
+		}
+
+		@media (max-width: 320px) {
+			font-size: 15px;		 
+		}
+
+
 		.preview-tema{
 		    text-align: center;
 		    background: linear-gradient(#a0a0a0, #3d3d3d);
@@ -32,6 +57,7 @@
 	    background: #6598cc;
 	    border-radius: 50%;
 	    padding: 7.5%;
+	    margin:2%;
 	    
 	}
 

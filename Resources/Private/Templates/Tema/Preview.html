@@ -6,7 +6,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<f:for each="{temas}" as="tema">
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="border-preview-tema">						
 											
 						<f:link.action class="preview-tema" pageUid="{uri_link}" pluginName="Temasgestion" target="_blank" action="show" arguments="{tema : tema}"> 
@@ -17,8 +17,8 @@
 							
 				</div>			
 			</f:for>
-				<div class="col-md-3">
-					<div class="border-preview-tema">						
+				<div class="col-md-3 col-sm-6">
+					<div class="border-preview-tema">			
 									
 						<f:link.action class="preview-tema" pageUid="{uri_link}" pluginName="Temasgestion" target="_blank" action="list" >
 							<h3>{titulo_link}</h3>		
