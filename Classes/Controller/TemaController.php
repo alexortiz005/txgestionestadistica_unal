@@ -56,6 +56,7 @@ class TemaController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     {
         $uri_link = $this->settings['link'];
         $titulo_link = $this->settings['titulo_link'];
+        $texto_link = $this->settings['texto_link'];
         $uids_temas_a_mostrar = explode(',', $this->settings['temas_a_mostrar']);
 
         $temas_a_mostrar = [];
@@ -66,6 +67,7 @@ class TemaController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         $this->view->assignMultiple([
             'uri_link' => $uri_link, 
             'titulo_link' => $titulo_link, 
+            'texto_link' => $texto_link, 
             'temas' => $temas_a_mostrar
         ]);
 

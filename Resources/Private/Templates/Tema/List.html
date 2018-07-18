@@ -13,34 +13,20 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Listing for Tema</h1>
 
-<f:flashMessages />
+<div class="lista-temas-gestion">
+	<div class="lista-completa panel panel-default">		
+		<div class="titulo-lista">
+			Mas Temas
+		</div>
+		<div class="list-group">
+		<f:for each="{temas}" as="tema">
+		  <a href="#" class="list-group-item">{tema.nombreDisplay}</a>
+		</f:for>	
+		</div>		
+	</div>
+</div>
+	
 
-<table  class="tx_gestionestadisticaunal" >
-	<tr>
-		<th><f:translate key="tx_gestionestadisticaunal_domain_model_tema.nombre" /></th>
-		<th><f:translate key="tx_gestionestadisticaunal_domain_model_tema.nombre_display" /></th>
-		<th><f:translate key="tx_gestionestadisticaunal_domain_model_tema.descripcion" /></th>
-		<th><f:translate key="tx_gestionestadisticaunal_domain_model_tema.contenido" /></th>
-		<th> </th>
-		<th> </th>
-	</tr>
-
-	<f:for each="{temas}" as="tema">
-		<tr>
-			<td><f:link.action action="show" arguments="{tema : tema}"> {tema.nombre}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{tema : tema}"> {tema.nombreDisplay}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{tema : tema}"> {tema.descripcion}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{tema : tema}"> 
-				<f:format.html>{tema.contenido}</f:format.html>			
-			</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{tema : tema}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{tema : tema}">Delete</f:link.action></td>
-		</tr>
-	</f:for>
-</table>
-
-<f:link.action action="new">New Tema</f:link.action>
 </f:section>
 </html>

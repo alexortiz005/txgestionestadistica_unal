@@ -7,7 +7,7 @@
 		<div class="row">
 			<f:for each="{temas}" as="tema">
 				<div class="col-md-3 col-sm-6">
-					<div class="border-preview-tema">						
+					<div class="border-preview-tema" data-toggle="tooltip" data-placement="bottom" title="{tema.descripcion}">						
 											
 						<f:link.action class="preview-tema" pageUid="{uri_link}" pluginName="Temasgestion" target="_blank" action="show" arguments="{tema : tema}"> 
 							<h3>{tema.nombreDisplay}</h3>
@@ -18,14 +18,20 @@
 				</div>			
 			</f:for>
 				<div class="col-md-3 col-sm-6">
-					<div class="border-preview-tema">			
+					<div class="border-preview-tema" data-toggle="tooltip" data-placement="bottom" title="{texto_link}">		
 									
 						<f:link.action class="preview-tema" pageUid="{uri_link}" pluginName="Temasgestion" target="_blank" action="list" >
 							<h3>{titulo_link}</h3>		
-						</f:link.action>
+						</f:link.action>						
 							
 					</div>
 				</div>	
+
+				<script>
+				$(document).ready(function(){
+				    $('[data-toggle="tooltip"]').tooltip(); 
+				});
+				</script>
 		</div>
 	</div>	
 </div>

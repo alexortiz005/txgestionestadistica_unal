@@ -42,6 +42,9 @@
 			<trans-unit id="plugin_previewgestion.titulo_link">
 				<source>Titulo del Enlace</source>
 			</trans-unit>
+			<trans-unit id="plugin_previewgestion.texto_link">
+				<source>Texto del Enlace</source>
+			</trans-unit>
 			<trans-unit id="plugin_previewgestion.link">
 				<source>Enlace</source>
 			</trans-unit>
