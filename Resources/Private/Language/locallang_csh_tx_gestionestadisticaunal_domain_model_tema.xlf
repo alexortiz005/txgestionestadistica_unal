@@ -18,6 +18,9 @@
 			<trans-unit id="recursos.description">
 				<source>recursos</source>
 			</trans-unit>
+			<trans-unit id="mas_temas">
+				<source>Más temas</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

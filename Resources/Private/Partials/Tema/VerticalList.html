@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="lista-completa panel panel-default">		
+	<div class="titulo-lista">
+		<f:translate key="LLL:EXT:gestionestadistica_unal/Resources/Private/Language/locallang_csh_tx_gestionestadisticaunal_domain_model_tema.xlf:mas_temas" />
+	</div>
+	<div class="list-group">
+	<f:for each="{temas}" as="tema">
+		<f:link.action class="list-group-item" action="show" arguments="{tema : tema}">{tema.nombreDisplay}</f:link.action>
+	</f:for>	
+	</div>		
+</div>
+
+
+</html>

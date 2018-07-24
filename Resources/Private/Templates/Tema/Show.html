@@ -13,11 +13,46 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for Tema</h1>
 
-<f:flashMessages />
-<f:render partial="Tema/Properties" arguments="{tema:tema}" />
-<f:link.action action="list">Back to list</f:link.action><br />
-<f:link.action action="new">New Tema</f:link.action>
-	</f:section>
+<div class="container-fluid">
+	<div class="show-tema-gestion">
+			
+		<div class="row">
+			<div class="col-md-3 col-md-push-9">
+				<f:render partial="Tema/VerticalList" arguments="{temas:temas}" />
+			</div>
+			<div class="col-md-9 col-md-pull-3">
+				<div class="main-tema">
+
+					<h1>{tema.nombreDisplay}</h1>	
+					<f:format.html>{tema.contenido}</f:format.html>
+
+					<div class="recursos">
+						<ul class="list-group">	
+
+
+							<f:for each="{tema.recursos}" as="recurso">	
+								<f:if condition="{recurso.link}">
+								    <f:then>	
+								    	<li class="list-group-item recurso"><a target="_blank" href="{recurso.link}">{recurso.nombreDisplay} <span class="glyphicon glyphicon-link"></span></a></li>
+									</f:then>
+								    <f:else if="{recurso.archivo}">
+								    	<li class="list-group-item recurso"><a target="_blank" href="/fileadmin{recurso.archivo.originalResource.originalFile.identifier}">{recurso.nombreDisplay} <span class="glyphicon glyphicon-link"></span></a> </li> 
+								    </f:else>
+								    <f:else>        
+									</f:else>
+								</f:if>						
+							</f:for>
+
+
+						</ul>	
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+</f:section>
 </html>

@@ -1,4 +1,7 @@
 .tx-gestionestadistica-unal{
+	
+	margin-top:5%;
+
 	.preview-temas-gestion{
 		padding:2.5% 5%;
 		font-size: 12px;
@@ -54,19 +57,143 @@
 		}
 	}	
 
-	
-	.lista-temas-gestion{
 
-		color:white;
+	.lista-completa {
+
+		border-radius: 5px;
+    	overflow: hidden;	
+		background: transparent;
 
 		.titulo-lista {
 		    text-align: center;
-		    font-size: 2em;
 		    padding: 2.5%;
 		    font-weight: bold;
 		    background: #669acc;
+		    color:white;
 		}
+
+		.list-group-item {
+		    background: transparent;
+		    font-weight: bold;
+		    color: white;
+     		text-shadow: 0 0 3px black;
+     		color:white;
+     		line-height: 1;
+
+		}
+
+		.list-group-item:hover {
+		    background: rgba(255, 255, 255, 0.5);
+		}
+
+		.list-group {
+		    background: linear-gradient(to bottom, darkslategray, transparent);
+		}
+		
 
 	}
 
+	
+	.lista-temas-gestion{
+
+		font-size:15px;
+	
+		@media(max-width:991px){
+
+			.titulo-lista {
+			    padding: 5%;
+			    font-size: 6vw;
+			}
+
+			.list-group-item {
+			    padding: 3%;
+			    font-size:5vw;
+			}
+
+		}
+
+		@media(min-width:992px){
+
+			.titulo-lista {
+			    padding: 3%;
+			    font-size: 2.5vw;
+			}
+
+			.list-group-item {
+			    padding: 2.5%;
+			    font-size:2vw;
+			}
+		}	
+
+	}
+
+	.show-tema-gestion{
+
+		font-size:10px;	
+
+		@media(max-width:991px){
+
+			.titulo-lista {
+			    padding: 5%;
+			    font-size: 6vw;
+			}
+
+			.list-group-item {
+			    padding: 3%;
+			    font-size:5vw;
+			}
+
+		}
+
+		@media(min-width:992px){
+
+			.titulo-lista {
+			    padding: 10%;
+			    font-size: 1.8vw;
+			}
+
+			.list-group-item {
+			    padding: 9%;
+			    font-size:1.5vw;
+			}
+		}		
+
+
+	}
+
+	.main-tema {
+	    background: whitesmoke;
+	    padding: 2%;
+
+	    @media(max-width:991px){
+	    	margin:inherit;
+		
+		}
+
+		@media(min-width:992px){
+	   		margin: 0% -2%;			
+		}	
+
+
+	    p{
+	    	font-size:2em;
+	    	img{
+	    	    width: 100%;
+    			height: auto;
+	    	}
+	    }
+
+	    .recursos {
+
+		    margin-top: 2%;
+     		margin-bottom: -2%;
+
+		    .recurso {
+			    font-size: 2.2em;
+			    font-weight: bold;
+			    padding:2.5%;
+			}
+		}
+	    
+	}
 }

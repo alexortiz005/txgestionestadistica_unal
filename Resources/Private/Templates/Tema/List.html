@@ -14,19 +14,11 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:section name="main">
 
-<div class="lista-temas-gestion">
-	<div class="lista-completa panel panel-default">		
-		<div class="titulo-lista">
-			Mas Temas
-		</div>
-		<div class="list-group">
-		<f:for each="{temas}" as="tema">
-		  <a href="#" class="list-group-item">{tema.nombreDisplay}</a>
-		</f:for>	
-		</div>		
-	</div>
+<div class="container-fluid">
+	<div class="lista-temas-gestion">
+		<f:render partial="Tema/VerticalList" arguments="{temas:temas}" />
+	</div>	
 </div>
-	
 
 </f:section>
 </html>

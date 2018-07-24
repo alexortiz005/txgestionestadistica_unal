@@ -44,7 +44,11 @@ class TemaController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     public function showAction(\UNAL\GestionestadisticaUnal\Domain\Model\Tema $tema)
     {
-        $this->view->assign('tema', $tema);
+        $temas = $this->temaRepository->findAll();
+        $this->view->assignMultiple([
+            'tema' => $tema, 
+            'temas' => $temas 
+        ]);
     }
     /**
      * action preview
