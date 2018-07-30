@@ -1,9 +1,7 @@
-.tx-gestionestadistica-unal{
-	
-	margin-top:5%;
+.tx-gestionestadistica-unal{	
 
 	.preview-temas-gestion{
-		padding:2.5% 5%;
+		padding:1.5% 5%;
 		font-size: 12px;
 		@media (max-width: 2560px) {
 			font-size: 1vw;		 
@@ -14,6 +12,10 @@
 		}
 
 		@media (max-width: 768px) {
+			font-size: 2vw;		 
+		}	
+
+		@media (max-width: 425px) {
 			font-size: 5vw;		 
 		}		
 
