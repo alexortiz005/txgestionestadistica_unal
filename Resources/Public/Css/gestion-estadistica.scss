@@ -166,8 +166,8 @@
 	}
 
 	.main-tema {
-	    background: whitesmoke;
-	    padding: 2%;
+	    background: whitesmoke;	    
+     	padding: 2% 4%;
 
 	    @media(max-width:991px){
 	    	margin:inherit;
@@ -203,8 +203,13 @@
 
 		    .recurso {
 			    font-size: 2.2em;
-			    font-weight: bold;
-			    padding:2.5%;
+			    font-weight: bold;			    
+     			padding: 1.5% 2%;			   
+			}
+
+		 	ul.list-group {
+			    font-size: 10px;
+			    margin-left: unset;
 			}
 		}
 	    
