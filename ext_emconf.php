@@ -26,7 +26,9 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '8.6.0-8.7.99',            
             'rte_ckeditor_image' => '8.7.0-8.7.99',            
-            'rte_ckeditor' => '8.7.0-8.7.99',            
+            'rte_ckeditor' => '8.7.0-8.7.99',   
+            'bootstrap_package' => '10.0.0-10.0.99,',
+            'unal_skin_default' => '0.2.0-0.2.99',         
         ],
         'conflicts' => [],
         'suggests' => [],
